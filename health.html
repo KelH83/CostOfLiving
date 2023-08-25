@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Of Living Helper || Health</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <!--Banner-->
+    <div id="banner" class="row">
+      <div class="col-3"><img class="w-75" src="./images/CoLlogo.png" alt="cost of living logo"/></div>
+      <div class="col-6"><h1 id="banner-text" class="display-1 mt-5">Health</h1></div>
+      <div class="col-3"><img class="w-75" src="./images/logophone.png" alt="call us logo"/></div>
+    </div>
+
+    <!--Navbar-->
+    <div class="row">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid" style="background-color: #dfd8d8">
+        <!-- <a class="navbar-brand"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="charities.html">Charities</a></li>
+            <li class="nav-item"><a class="nav-link" href="clothing.html">Clothing</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Food
+              </a>
+              <ul class="dropdown-menu" style="background-color: #dfd8d8">
+                <li><a class="dropdown-item dropdown-style" href="buying.html">Buying food</a></li>
+                <li><a class="dropdown-item dropdown-style" href="making.html">Making food</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="health.html">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="money.html">Make money</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="utilities.html">Utilities</a></li>
+            
+          
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onClick="searchFunction()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!--Main body-->
+
+
+    <div class="row pt-5 main-body">
+      <div class="col main-body">
+        <h3 class="display-5 rounded border border-dark p-3">It is health that is real wealth. And not pieces of gold and silver. <span class="fs-3" id="healht-quote">~Ghandi</span></h3>
+        <p class="main-body fs-4">It is so important to look after not just your physical health but your mental health as well. Worrying about money can take a real toll on your mental health. 
+          If you feel like you need someone to talk to then please seek help. Your GP is a good place to start but there are also a number of organisations who can help
+        </p>
+        
+      </div>
+      
+    </div>
+    <p class="main-body fs-4">2 highly recommended organisations are:</p>
+
+    <div class="row mb-3">      
+      <div class="col-3 main-body"><a href="https://www.moneyhelper.org.uk/en" target="blank"><img class="img-fluid rounded border border-dark" src="./images/moneyhelper.png" alt="money helper logo"/></a></div>
+      <div class="col-9 main-body"><p class="main-body fs-4 text-start">Call 0800 011 3797 Monday to Friday, 8am to 6pm</p></div>
+    </div>
+
+    <div class="row mb-3">      
+      <div class="col-3 main-body"><a href="https://www.nationaldebtline.org/" target="blank"><img class="img-fluid rounded border border-dark" src="./images/nationaldebt.png" alt="money debt logo"/></a></div>
+      <div class="col-9 main-body"><p class="main-body fs-4 text-start">Call 0808 808 4000 Monday to Friday, 9am to 8pm and Saturday 9.30am to 1pm</p></div>
+    </div>
+
+    <p class="main-body fs-4">If you are on a low income and/or benefits you may be entitled to free prescriptions and free dentistry
+
+    </p>
+    <a class="link-underline-success main-body" href="https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start" target="blank"><button class="highlight-link p-3 m-4 rounded border border-dark">Check your eligibility</button></a>
+
+    <!--Footer-->
+    <div id="footer" class="row pt-2 text-center">
+      <div class="col-sm-5 col-md-4 float-start">
+        <p>Registered charity number 897564231</p>
+      <p>© Copyright Cost Of Living Helper <span id="year"></span></p>
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <img src="./images/facebook.png" class="social-media img-fluid" alt="facebook logo"/>
+        <img src="./images/twitter.png" class="social-media img-fluid" alt="twitter logo"/>
+        <img src="./images/instagram.png" class="social-media img-fluid" alt="instagram logo"/>
+      </div>
+      <div class="col-sm-5 col-md-4 float-end">
+        <p>Tel: 01223 344 556</p>
+        <p>Email: help@colhelper.com</p>
+      </div>
+    </div>
+
+  </div>
+    
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

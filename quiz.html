@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Of Living Helper || Career quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <!--Banner-->
+    <div id="banner" class="row">
+      <div class="col-3"><img class="w-75" src="./images/CoLlogo.png" alt="cost of living logo"/></div>
+      <div class="col-6"><h1 id="banner-text" class="display-1 mt-5">Career Quiz</h1></div>
+      <div class="col-3"><img class="w-75" src="./images/logophone.png" alt="call us logo"/></div>
+    </div>
+
+    <!--Navbar-->
+    <div class="row">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid" style="background-color: #dfd8d8">
+        <!-- <a class="navbar-brand"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="charities.html">Charities</a></li>
+            <li class="nav-item"><a class="nav-link" href="clothing.html">Clothing</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="food.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Food
+              </a>
+              <ul class="dropdown-menu" style="background-color: #dfd8d8">
+                <li><a class="dropdown-item dropdown-style" href="buying.html">Buying food</a></li>
+                <li><a class="dropdown-item dropdown-style" href="making.html">Making food</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="health.html">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="money.html">Make money</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="utilities.html">Utilities</a></li>
+            
+          
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onClick="searchFunction()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!--Main body-->
+    <!--question1-->
+    <div id="question1">
+    <div class="row pt-5 main-body">
+      <p class="fs-2 main-body fw-bold">You would like to...</p>
+      <p class="fs-3 main-body p-5">Work hands-on with objects, machines, tools, plants, or animals; 
+        <br>Work and play outside; Use your physical or athletic abilities
+        </p>
+    </div>
+    <div class="row main-body mb-3">
+      <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+      <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('handsOn','stronglyDisagree','question1','question2')" class="rounded border border-dark fs-4 quiz-button strongly-disagree">Strongly disagree</button></div>
+      <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('handsOn','disagree', 'question1', 'question2')" class="rounded border border-dark fs-4 quiz-button disagree">Disagree</button></div>
+      <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('handsOn','neutral','question1', 'question2')" class="rounded border border-dark fs-4 quiz-button neutral">Neutral</button></div>
+      <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('handsOn','agree','question1','question2')" class="rounded border border-dark fs-4 quiz-button agree">Agree</button></div>
+      <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('handsOn','stronglyAgree', 'question1', 'question2')" class="rounded border border-dark fs-4 quiz-button strongly-agree">Strongly agree</button></div>
+      <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+    </div>
+    </div>
+    <!--question2-->
+    <div id="question2">
+      <div class="row pt-5 main-body">
+        <p class="fs-2 main-body fw-bold">You would like to...</p>
+        <p class="fs-3 main-body p-5">Observe, learn, analyse, evaluate, or solve problems; 
+          <br>Question and explore physical, biological, or cultural happenings
+          </p>
+      </div>
+      <div class="row main-body mb-3">
+        <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+        <div class="col-sm-4 col-md-2col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('observe','stronglyDisagree','question2','question3')" class="rounded border border-dark fs-4 quiz-button strongly-disagree">Strongly disagree</button></div>
+        <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('observe','disagree', 'question2', 'question3')" class="rounded border border-dark fs-4 quiz-button disagree">Disagree</button></div>
+        <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('observe','neutral','question2', 'question3')" class="rounded border border-dark fs-4 quiz-button neutral">Neutral</button></div>
+        <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('observe','agree','question2','question3')" class="rounded border border-dark fs-4 quiz-button agree">Agree</button></div>
+        <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('observe','stronglyAgree', 'question2', 'question3')" class="rounded border border-dark fs-4 quiz-button strongly-agree">Strongly agree</button></div>
+        <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+      </div>
+      </div>
+      <!--question3-->
+      <div id="question3">
+        <div class="row pt-5 main-body">
+          <p class="fs-2 main-body fw-bold">You would like to...</p>
+          <p class="fs-3 main-body p-5">Express yourself creatively; Use imagination or intuition; 
+            <br>Feel free to be inventive without limits
+            </p>
+        </div>
+        <div class="row main-body mb-3">
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('creative','stronglyDisagree','question3','question4')" class="rounded border border-dark fs-4 quiz-button strongly-disagree">Strongly disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('creative','disagree', 'question3', 'question4')" class="rounded border border-dark fs-4 quiz-button disagree">Disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('creative','neutral','question3', 'question4')" class="rounded border border-dark fs-4 quiz-button neutral">Neutral</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('creative','agree','question3','question4')" class="rounded border border-dark fs-4 quiz-button agree">Agree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('creative','stronglyAgree', 'question3', 'question4')" class="rounded border border-dark fs-4 quiz-button strongly-agree">Strongly agree</button></div>
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+        </div>
+        </div>
+      <!--question4-->
+      <div id="question4">
+        <div class="row pt-5 main-body">
+          <p class="fs-2 main-body fw-bold">You would like to...</p>
+          <p class="fs-3 main-body p-5">Inform, enlighten, help, teach, counsel, or cure people; 
+            <br>Use your skills with words to serve people
+            </p>
+        </div>
+        <div class="row main-body mb-3">
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('teach','stronglyDisagree','question4','question5')" class="rounded border border-dark fs-4 quiz-button strongly-disagree">Strongly disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('teach','disagree', 'question4', 'question5')" class="rounded border border-dark fs-4 quiz-button disagree">Disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('teach','neutral','question4', 'question5')" class="rounded border border-dark fs-4 quiz-button neutral">Neutral</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('teach','agree','question4','question5')" class="rounded border border-dark fs-4 quiz-button agree">Agree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('teach','stronglyAgree', 'question4', 'question5')" class="rounded border border-dark fs-4 quiz-button strongly-agree">Strongly agree</button></div>
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+        </div>
+        </div>
+      <!--question5-->
+      <div id="question5">
+        <div class="row pt-5 main-body">
+          <p class="fs-2 main-body fw-bold">You would like to...</p>
+          <p class="fs-3 main-body p-5">Influence, persuade, lead, or manage; 
+            <br>Reach your personal or organisational goals
+            </p>
+        </div>
+        <div class="row main-body mb-3">
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('manage','stronglyDisagree','question5','question6')" class="rounded border border-dark fs-4 quiz-button strongly-disagree">Strongly disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('manage','disagree', 'question5', 'question6')" class="rounded border border-dark fs-4 quiz-button disagree">Disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('manage','neutral','question5', 'question6')" class="rounded border border-dark fs-4 quiz-button neutral">Neutral</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('manage','agree','question5','question6')" class="rounded border border-dark fs-4 quiz-button agree">Agree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('manage','stronglyAgree', 'question5', 'question6')" class="rounded border border-dark fs-4 quiz-button strongly-agree">Strongly agree</button></div>
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+        </div>
+        </div>
+      <!--question6-->
+      <div id="question6">
+        <div class="row pt-5 main-body">
+          <p class="fs-2 main-body fw-bold">You would like to...</p>
+          <p class="fs-3 main-body p-5">Work with facts, numbers, and details; 
+            <br>Follow directions to organise, plan, and complete a project or task
+            </p>
+        </div>
+        <div class="row main-body mb-3">
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('facts','stronglyDisagree','question6','seeResult')" class="rounded border border-dark fs-4 quiz-button strongly-disagree">Strongly disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('facts','disagree', 'question6', 'seeResult')" class="rounded border border-dark fs-4 quiz-button disagree">Disagree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('facts','neutral','question6', 'seeResult')" class="rounded border border-dark fs-4 quiz-button neutral">Neutral</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('facts','agree','question6','seeResult')" class="rounded border border-dark fs-4 quiz-button agree">Agree</button></div>
+          <div class="col-sm-4 col-md-2 main-body mb-3"><button onClick="answerQuestion('facts','stronglyAgree', 'question6', 'seeResult')" class="rounded border border-dark fs-4 quiz-button strongly-agree">Strongly agree</button></div>
+          <div class="col-sm-1 col-md-1 main-body mb-3"></div>
+        </div>
+        </div>
+
+        <div id="seeResult" class="main-body mx-auto">
+          <img class="w-25 img-fluid" src="./images/complete.png" alt="checkbox image"/>
+          <p class="fs-4 main-body">All questions complete!</p>
+          <button onClick="quizResults()" class="rounded border border-dark fs-3 highlight-link">See Results</button>
+        </div>
+      
+      <!--quiz results-->
+      <div id="quizResult1" class="row main-body m-5">
+          <img class='main-body img-fluid pt-5 w-50 mx-auto' src='./images/careers1.png' alt='pictures of different careers'/>
+          <p class='main-body fs-4'>Hospitality</p>
+          <p class='main-body fs-4'>Gardening</p>
+          <p class='main-body fs-4'>Policing and Security</p>
+          <p class='main-body fs-4'>Electrician</p>
+          <p class='main-body fs-4'>Builder</p>
+          <p class='main-body fs-4'>Decorator</p>
+          <p class='main-body fs-4'>Mechanic</p>
+          <p class='main-body fs-4'>Pet groomer</p>
+          </div>
+
+      <div id="quizResult2" class="row main-body m-5">
+          <img class='main-body img-fluid pt-5 w-50 mx-auto' src='./images/careers2.png' alt='pictures of different careers'/>
+          <p class='main-body fs-4'>Scientist</p>
+          <p class='main-body fs-4'>Medical Practioners</p>
+          <p class='main-body fs-4'>Engineers</p>
+          <p class='main-body fs-4'>Pharmacists</p>
+      </div>
+
+      <div id="quizResult3" class="row main-body m-5">
+          <img class='main-body img-fluid pt-5 w-50 mx-auto' src='./images/career3.png' alt='pictures of different careers'/>
+          <p class='main-body fs-4'>Graphic Designer</p>
+          <p class='main-body fs-4'>Hairdresser</p>
+          <p class='main-body fs-4'>Beautician</p>
+          <p class='main-body fs-4'>Writer</p>
+      </div>
+
+      <div id="quizResult4" class="row main-body m-5">
+        <img class='main-body img-fluid pt-5 w-50 mx-auto' src='./images/careers4.png' alt='pictures of different careers'/>
+        <p class='main-body fs-4'>Nursery assistant</p>
+        <p class='main-body fs-4'>Teacher</p>
+        <p class='main-body fs-4'>Driving instructor</p>
+        <p class='main-body fs-4'>Counsellor</p>
+    </div>
+
+    <div id="quizResult5" class="row main-body m-5">
+      <img class='main-body img-fluid pt-5 w-50 mx-auto' src='./images/careers5.png' alt='pictures of different careers'/>
+      <p class='main-body fs-4'>Barrister</p>
+      <p class='main-body fs-4'>Leisure center manager</p>
+      <p class='main-body fs-4'>Chef</p>
+      <p class='main-body fs-4'>Travel agent</p>
+  </div>
+
+  <div id="quizResult6" class="row main-body m-5">
+    <img class='main-body img-fluid pt-5 w-50 mx-auto' src='./images/careers6.png' alt='pictures of different careers'/>
+    <p class='main-body fs-4'>Accountant</p>
+    <p class='main-body fs-4'>Library assistant</p>
+    <p class='main-body fs-4'>Records clerk</p>
+    <p class='main-body fs-4'>Admin assistant</p>
+</div>
+      <a id="retake" class="main-body mb-5" href='quiz.html'><button class='rounded border border-dark fs-4 quiz-button'>Retake Quiz</button></a>    
+     
+
+    <!--Footer-->
+    <div id="footer" class="row pt-2 text-center mt-2">
+      <div class="col-sm-5 col-md-4 float-start">
+        <p>Registered charity number 897564231</p>
+      <p>© Copyright Cost Of Living Helper <span id="year"></span></p>
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <img src="./images/facebook.png" class="social-media img-fluid" alt="facebook logo"/>
+        <img src="./images/twitter.png" class="social-media img-fluid" alt="twitter logo"/>
+        <img src="./images/instagram.png" class="social-media img-fluid" alt="instagram logo"/>
+      </div>
+      <div class="col-sm-5 col-md-4 float-end">
+        <p>Tel: 01223 344 556</p>
+        <p>Email: help@colhelper.com</p>
+      </div>
+    </div>
+
+  </div>
+    
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

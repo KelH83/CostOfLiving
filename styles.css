@@ -1,0 +1,166 @@
+/*Site wide styling*/
+
+*{
+  background-color: #dfd8d8;
+  color:#4a484c;
+  font-family: 'Nixie One', cursive;
+}
+
+.container-fluid{
+    background-color: #a5cda9;
+}
+
+h1{
+    font-family: 'Parisienne', cursive; 
+}
+
+h2{
+    font-family: 'Parisienne', cursive;
+}
+
+h3{
+    font-family: 'Parisienne', cursive;
+}
+
+a:hover{
+    color: #000 !important;
+    background-color: #a5cda9;
+    border-radius: 15px;
+}
+
+.dropdown-style:hover{
+    color: #000;
+    background-color: #a5cda9 !important;
+    border-radius: 15px;
+}
+
+/*banner*/
+
+#banner{
+    border-bottom: 4px solid #a5cda9;
+}
+
+.title-logo{
+    width:100px;
+    height: 100px;
+}
+/*Navabar*/
+
+.navbar-brand{
+    background-color: #dfd8d8;
+}
+
+/*Main site area*/
+
+.main-body{
+    background-color: #a5cda9;
+}
+
+
+/*footer*/
+
+#footer img{
+    width:50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+/*calculator page*/
+.formColumn{
+    display:inline;
+    width:25%;
+    float:left;
+
+}
+
+#submitButton:hover{
+    background-color: #a5cda9;
+    color: #dfd8d8;
+}
+
+/*Charities page*/
+.heart-title:hover{
+background-color: #a5cda9;
+}
+
+
+/*quiz page*/
+
+.quiz-button:hover{
+    background-color: #4a484c;
+    color: #a5cda9;
+}
+
+#question1{
+    display: inline;
+}
+
+#question2{
+    display: none;
+}
+
+#question3{
+    display: none;
+}
+
+#question4{
+    display: none;
+}
+
+#question5{
+    display: none;
+}
+
+#question6{
+    display: none;
+}
+
+#seeResult{
+    display: none;
+}
+
+#quizResult1{
+    display: none;
+}
+#quizResult2{
+    display: none;
+}
+#quizResult3{
+    display:none;
+}
+
+#quizResult4{
+    display:none;
+}
+
+#quizResult5{
+    display:none;
+}
+
+#quizResult6{
+    display:none;
+}
+
+#retake{
+    display:none;
+}
+
+/*making food page*/
+.highlight-link:hover{
+    background-color: #4a484c;
+    color: #a5cda9;
+}
+
+/**/
+#health-quote{
+    font-family: 'Nixie One', cursive;
+}
+
+
+
+/*
+#a5cda9
+#4a484c
+font-family: 'Parisienne', cursive;
+*/

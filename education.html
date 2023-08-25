@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Of Living Helper || Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <!--Banner-->
+    <div id="banner" class="row">
+      <div class="col-3"><img class="w-75" src="./images/CoLlogo.png" alt="cost of living logo"/></div>
+      <div class="col-6"><h1 id="banner-text" class="display-1 mt-5">Education</h1></div>
+      <div class="col-3"><img class="w-75" src="./images/logophone.png" alt="call us logo"/></div>
+    </div>
+
+    <!--Navbar-->
+    <div class="row">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid" style="background-color: #dfd8d8">
+        <!-- <a class="navbar-brand"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="charities.html">Charities</a></li>
+            <li class="nav-item"><a class="nav-link" href="clothing.html">Clothing</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Food
+              </a>
+              <ul class="dropdown-menu" style="background-color: #dfd8d8">
+                <li><a class="dropdown-item dropdown-style" href="buying.html">Buying food</a></li>
+                <li><a class="dropdown-item dropdown-style" href="making.html">Making food</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="health.html">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="money.html">Make money</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="utilities.html">Utilities</a></li>
+            
+          
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onClick="searchFunction()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!--Main body-->
+    <div class="row main-body">
+      <div class="col-sm-6 col-md-4 main-body">
+      <img class="main-body w-75 img-fluid" src="./images/education.png" alt="abc letters with books inside"/>
+      </div>
+      <div class="col-sm-6 col-md-8 main-body">
+    <h2 class="main-body mt-5 pt-5 text-start">"Education is one thing no one can take away from you"<span class="fs-5 main-body"> ~ Elin Nordegren</span></h2>
+    </div> 
+    </div> 
+
+    <div class="row pt-5 main-body">        
+        <p class="main-body fs-4">Better-educated people are more likely to be in work and tend to earn more. Gaining a new skill can also enable you to progress quickly into a higher paid role with your current employer. 
+          Education shapes a range of other outcomes, including health, criminality, and even happiness. </p>
+        <p class="main-body fs-4">The UK, like most countries, requires children to attend school but the experiences children have at school can be very different. Government decisions drive 
+          the level of funding available to different schools, but also schools make decisions as varied as whether to set children by ability or the size of classes. Teachers’ choices on how to 
+          lead their classes also have a huge impact on learning, and even the other pupils in a child’s classroom can influence their attainment. This along with undiagnosed neurodiversity and 
+          mental health conditions can lead to many people growing up having not reached their true potential.
+        </p>
+        <p class="main-body fs-4">Going back into education as an adult can be a daunting experience and a source of anxiety and confusion, we want to help! Furthering your education doesn't have 
+          to mean spending money, there are lots of free courses and funded places available. Some of the amazing initiatives available are as follows*;</p>
+      </div>
+      <!--Info cards-->
+      <div class="row main-body">
+      <div class="col-sm-12 col-md-4 main-body">
+        <div class="card border-dark m-3" style="width: 24rem;">
+          <img src="./images/cfglarge.png" alt="code first girls image"/>
+          <div class="card-body">
+            <h5 class="card-title">Code First Girls</h5>
+            <p class="card-text">We're on a mission to close the gender gap in tech by providing employment through free education.
+              <br><br>We’ve already helped more than 140,000 women learn to code and by working with companies globally, we’re boosting employability, diversity and social mobility, transforming local economies and communities.</p>
+            <a class="link-underline-success" href="https://codefirstgirls.com/" target="blank"><p class="main-body border border-dark rounded fs-5 w-50 mx-auto highlight-link">Find out more</p></a>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-4 main-body">
+          <div class="card border-dark m-3" style="width: 24rem;">
+            <img src="./images/mathsfree.png" alt="free maths and english image"/>
+            <div class="card-body">
+              <h5 class="card-title">Maths and English qualifications</h5>
+              <p class="card-text">You need basic reading, writing and maths skills to apply for most jobs or to study further.
+
+                If you’re over 16 and you’ve left school, you normally do not have to pay to do:
+                <ul>
+                <li>English or maths to GCSE level</li>
+                <li>some information and communication technology (ICT) courses</li>
+                <li>English for speakers of other languages (ESOL) - courses are also normally discounted or free depending on your employment status and how long you have been resident in England</li>
+                </ul>
+                </p>
+              <a class="link-underline-success" href="https://www.gov.uk/improve-english-maths-it-skills" target="blank"><p class="main-body border border-dark rounded fs-5 w-50 mx-auto highlight-link">Find out more</p></a>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 main-body">
+            <div class="card border-dark m-3" style="width: 24rem;">
+              <img src="./images/skills4lifeboot.jpeg" alt="free skills bootcamps image"/>
+              <div class="card-body">
+                <h5 class="card-title">Skills for life bootcamps</h5>
+                <p class="card-text">If you’re aged over 19 and looking to change sectors or progress in your current industry, a Skills Bootcamp could be your next step to a better job.
+                  <br>
+                  These flexible courses last up to 16 weeks and allow you to gain skills employers are looking for.
+                  <br>
+                  You will also have a guaranteed job interview at the end of the course.
+                  
+                </p>
+                <a class="link-underline-success" href="https://www.gov.uk/guidance/find-a-skills-bootcamp" target="blank"><p class="main-body border border-dark rounded fs-5 w-50 mx-auto highlight-link">Find out more</p></a>
+              </div>
+            </div>
+            </div>      
+      </div>  
+
+      <div class="row main-body">
+        <p class="main-body fs-4">Alternatively you can find free or low cost courses in a variety of subjects from the following providers:</p>
+      <div class="col-sm-6 col-md-3 main-body"><a href="https://www.open.edu/openlearn/free-courses/full-catalogue" target="blank"><img class="w-75 img-fluid" src="./images/openlearn.png" alt="Open uni logo"/></a></div>
+      <div class="col-sm-6 col-md-3 main-body"><a href="https://www.coursera.org/" target="blank"><img class="w-75 img-fluid" src="./images/coursera.png" alt="Coursera logo"/></a></div>
+      <div class="col-sm-6 col-md-3 main-body"><a href="https://www.udemy.com/" target="blank"><img class="w-75 img-fluid" src="./images/udemy.png" alt="Udemy logo"/></a></div>
+      <div class="col-sm-6 col-md-3 main-body"><a href="https://www.futurelearn.com/" target="blank"><img class="w-75 img-fluid" src="./images/futurelearn.png" alt="Futurelearn logo"/></a></div>
+      
+    </div>
+    <div class="row main-body">
+      <div class="col-sm-1 col-md-3 main-body"></div>
+      <div class="col-sm-10 col-md-6 rounded border border-dark mb-3 mt-4"><p class=" fs-4">If you're not sure where to start then why not try our career quiz to get some ideas on what careers and jobs may be suitable for you</p>
+        <a href="quiz.html"><button class="m-2 p-3 fs-4 rounded main-body highlight-link">START</button></a>
+      </div>
+      <div class="colsm-1 col-md-3 main-body"></div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer" class="row pt-2 text-center">
+      <div class="col-sm-5 col-md-4 float-start">
+        <p>Registered charity number 897564231</p>
+      <p>© Copyright Cost Of Living Helper <span id="year"></span></p>
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <img src="./images/facebook.png" class="social-media img-fluid" alt="facebook logo"/>
+        <img src="./images/twitter.png" class="social-media img-fluid" alt="twitter logo"/>
+        <img src="./images/instagram.png" class="social-media img-fluid" alt="instagram logo"/>
+      </div>
+      <div class="col-sm-5 col-md-4 float-end">
+        <p>Tel: 01223 344 556</p>
+        <p>Email: help@colhelper.com</p>
+      </div>
+    </div>
+
+  </div>
+    
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

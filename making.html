@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Of Living Helper || Making food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <!--Banner-->
+    <div id="banner" class="row">
+      <div class="col-3"><img class="w-75" src="./images/CoLlogo.png" alt="cost of living logo"/></div>
+      <div class="col-6"><h1 id="banner-text" class="display-1 mt-5">Making Food</h1></div>
+      <div class="col-3"><img class="w-75" src="./images/logophone.png" alt="call us logo"/></div>
+    </div>
+
+    <!--Navbar-->
+    <div class="row">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid" style="background-color: #dfd8d8">
+        <!-- <a class="navbar-brand"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="charities.html">Charities</a></li>
+            <li class="nav-item"><a class="nav-link" href="clothing.html">Clothing</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Food
+              </a>
+              <ul class="dropdown-menu" style="background-color: #dfd8d8">
+                <li><a class="dropdown-item dropdown-style" href="buying.html">Buying food</a></li>
+                <li><a class="dropdown-item dropdown-style" href="making.html">Making food</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="health.html">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="money.html">Make money</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="utilities.html">Utilities</a></li>
+            
+          
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onClick="searchFunction()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!--Main body-->
+
+
+    <div class="row pt-5 main-body">
+      <div class="col-sm-12 col-md-8 main-body">
+          <p class="main-body fs-1">Cooking on a budget needn't mean plain and boring meals. You can make fresh, tasty and nutritious food for under £1 per portion!</p> 
+
+          <p class="main-body fs-4">A good way to save money on meals is by swapping ingredients for cheaper options, the biggest of this is meat. Meat is extremely expensive, by doing something as simple as having vegetarian or vegan meals a few times a week can save you a lot.
+            
+            Check out some of the cheapest recipe ideas by clicking on our recipies page (all fully costed) to bake some bargains. 
+            <br><br>You can also check out the external links below for some more amazing low cost meal ideas.</p>
+        
+      </div>
+      <div class="cols-sm-12 col-md-4 main-body"><img class="img-fluid" src="./images/recipies.png" alt="image of a variety of foods"/>
+        <a class="link-underline-success" href="recipies.html"><button class="rounded border border-dark highlight-link mb-2"><h2 class="highlight-link display-5">Recipies</h2></button></a>
+      </div>
+
+    </div>
+
+    <div class="row main-body">
+      <div class="col-sm-6 col-md-3 main-body">
+        <a class="link-underline-success" href="https://www.jamieoliver.com/budget-friendly-recipes/one-pound-recipes/" target="blank"><p class="fs-4 p-2 rounded border border-dark highlight-link">Jamie's £1 meals
+        </p></a></div>
+
+      <div class="col-sm-6 col-md-3 main-body">
+        <a class="link-underline-success" href="https://www.bbc.co.uk/food/collections/1_dinners" target="blank"><p class="fs-4 p-2 rounded border border-dark highlight-link">BBC £1 dinners
+        </p></a></div>
+
+      <div class="col-sm-6 col-md-3 main-body">
+        <a class="link-underline-success" href="https://www.asda.com/good-living/article/cheap-budget-meals-under-one-pound" target="blank"><p class="fs-4 p-2 rounded border border-dark highlight-link">Asda meals under £1
+        </p></a></div>
+
+        <div class="col-sm-6 col-md-3 main-body">
+        <a class="link-underline-success" href="https://cookingonabootstrap.com/category/recipes-food/" target="blank"><p class="fs-4 p-2 rounded border border-dark highlight-link">Cooking on a bootstrap
+        </p></a></div>
+
+    </div>
+
+    <!--Footer-->
+    <div id="footer" class="row pt-2 text-center">
+      <div class="col-sm-5 col-md-4 float-start">
+        <p>Registered charity number 897564231</p>
+      <p>© Copyright Cost Of Living Helper <span id="year"></span></p>
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <img src="./images/facebook.png" class="social-media img-fluid" alt="facebook logo"/>
+        <img src="./images/twitter.png" class="social-media img-fluid" alt="twitter logo"/>
+        <img src="./images/instagram.png" class="social-media img-fluid" alt="instagram logo"/>
+      </div>
+      <div class="col-sm-5 col-md-4 float-end">
+        <p>Tel: 01223 344 556</p>
+        <p>Email: help@colhelper.com</p>
+      </div>
+    </div>
+
+  </div>
+    
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

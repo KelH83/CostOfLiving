@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Of Living Helper || Recipies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <!--Banner-->
+    <div id="banner" class="row">
+      <div class="col-3"><img class="w-75" src="./images/CoLlogo.png" alt="cost of living logo"/></div>
+      <div class="col-6"><h1 id="banner-text" class="display-1 mt-5">Recipies</h1></div>
+      <div class="col-3"><img class="w-75" src="./images/logophone.png" alt="call us logo"/></div>
+    </div>
+
+    <!--Navbar-->
+    <div class="row">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid" style="background-color: #dfd8d8">
+        <!-- <a class="navbar-brand"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="charities.html">Charities</a></li>
+            <li class="nav-item"><a class="nav-link" href="clothing.html">Clothing</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Food
+              </a>
+              <ul class="dropdown-menu" style="background-color: #dfd8d8">
+                <li><a class="dropdown-item dropdown-style" href="buying.html">Buying food</a></li>
+                <li><a class="dropdown-item dropdown-style" href="making.html">Making food</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="health.html">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="money.html">Make money</a></li>
+            <li class="nav-item"><a class="nav-link" href="pets.html">Pets</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="utilities.html">Utilities</a></li>
+            
+          
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onClick="searchFunction()">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!--Main body-->
+
+    <div id="tipsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active main-body">
+        <!--recipie 1-->
+          <div class="row main-body">
+            <div class="col main-body mt-3"><h2 class="main-body display-4">Mushroom and spinach bolognese, 38p per portion</h2></div>
+          </div>
+          <div class="row main-body mt-3 mb-3">
+            <div class="col main-body"><img class="img-fluid rounded border border-dark" src="./images/recipeMushroomPasta.png" alt="Mushroom Pasta"/></div>
+          </div>
+          
+          <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Ingredients</h3>
+                 <br>200-250g spaghetti or pasta, from 14p (500g/35p)
+                  <br>1 large onion, 10p (1.5kg/90p)
+                  <br>4 fat cloves of garlic, 8p (2 bulbs/35p)
+                  <br>2 tbsp sunflower oil (or other), 3p (3l/£3)
+                  <br>a pinch of salt, less than 1p (750g/25p)
+                  <br>a good grind of pepper, less than 1p
+                  <br>4 tbsp tomato puree or a can of chopped tomatoes, 35p
+                  <br>250g mushrooms, 61p (400g/97p)
+                  <br>1 tbsp bottled lemon juice, 3p (50p/250ml)
+                  <br>100g frozen spinach (or fresh), 13p (2x1kg/£2.50)
+                  <br>1 tsp basic mixed dried herbs, 2p (14g/40p)
+                 </p></button>
+            </div>
+            </div>
+            <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Method</h3>
+              <p>
+                First bring a pan of water to the boil.<br><br>
+                While it’s warming through, peel and slice your onion and garlic, and mince your mushrooms. Toss into a pan with the oil, salt and pepper and turn the heat up high for a minute or two, taking care not to burn anything by stirring well to disturb it. Turn the heat down to low-medium, depending what hob ring you have it on.
+              <br><br>Toss the pasta into the hopefully-now-boiling water and reduce to a simmer for 8 minutes, or until cooked.
+              <br><br>Turn your attention back to the other pan. Add all remaining ingredients and stir well. Bring back to a high heat, add half a small cup of water to loosen the tomato puree, stir well to combine and reduce the heat back down, stirring occasionally.
+              <br><br>When the pasta is cooked, your bolognese should look – well, like a bolognese. Taste it – and season as required. It may need a dash more lemon juice or a smudge of vinegar, and any vinegar will do, even the malty stuff, or a pinch of salt, or a smattering more herbs – it’s up to you. And enjoy! If you aren’t a vegan, top with cheese as you normally would, if you are, then you probably know of good vegan cheese alternatives already 
+              </p></button>
+
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="carousel-item main-body">
+          <!--recipie 2-->
+          <div class="row main-body">
+            <div class="col main-body mt-3"><h2 class="main-body display-4">Penne Pappa al Pomodoro, 21p per portion</h2></div>
+          </div>
+          <div class="row main-body mt-3 mb-3">
+            <div class="col main-body"><img class="img-fluid rounded border border-dark" src="./images/recipePastapap.png" alt="Penne pasta"/></div>
+          </div>
+          
+          <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Ingredients</h3>
+                 <br>2 fat cloves of garlic, 4p
+                  <br>a pinch of salt,  less than 1p
+                  <br>5 tbsp oil, vegetable or sunflower, 10p
+                  <br>400g carton of tomatoes, 35p
+                  <br>1 stalk (2g) fresh basil, 6p
+                  <br>60g bread, crusts are best but any bread will do (approx 2 slices medium cut bread), 7p
+                  <br>300g penne pasta, 21p 
+                </p></button>
+            </div>
+            </div>
+            <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Method</h3>
+              <p>
+                First finely slice your garlic and add to a saucepan with the salt. Pour over half of the oil and turn the heat on very very gently.
+                <br><br>
+                After a minute, pour over the chopped tomatoes and add 250ml water and the herbs, and bring to the boil. Stir well, then reduce to a simmer for 15 minutes, until it thickens and concentrates. 
+                <br><br>
+                After 15 minutes, tear up your bread and fling it in. Add another 250ml water.Bring it to the boil again, then cover it to retain as much heat as possible (a lid, a plate, some tin foil) and turn the heat off. Leave it to stand for as long as you can bear it,it improves the longer it stands around.
+                <br><br>
+                When you’re ready to go, fling it in a blender and blitz it up. Dip your finger in and give it a quick taste – depending on your tomatoes it might be a little sharp – if that’s the case, just stir in a teaspoon of sugar to adjust it. Spoon it into a jar, stir in the oil to thin it – if you aren’t using it straight away the bits of bread will greedily soak up the juices – and store in the fridge until ready to use.
+                <br><br>
+                When you want to have it pop your pasta into some water, bring to the boil, reduce to a simmer for 8-10 minutes. Drain it, spoon over your sauce, warm through and serve.
+
+                </p></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item main-body">
+          <!--recipie 3-->
+          <div class="row main-body">
+            <div class="col main-body mt-3"><h2 class="main-body display-4">Mixed bean goulash, 29p  per portion</h2></div>
+          </div>
+          <div class="row main-body mt-3 mb-3">
+            <div class="col main-body"><img class="img-fluid rounded border border-dark" src="./images/recipeGoulash.png" alt="Goulash"/></div>
+          </div>
+          
+          <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Ingredients</h3>
+                <br>1 x 400g tin of red kidney beans, 35p (35p/400g)
+                <br>1 x 400g tin of baked beans, 25p (25p/400g)
+                <br>1 onion, 9p (80p/1.5kg)
+                <br>1 fat clove of garlic or a generous shake of the dried stuff, 2p (35p/2 bulbs)
+                <br>2 tablespoons cooking oil, 3p (£3/3l)
+                <br>2 teaspoons paprika, 4p (80p/100g)
+                <br>1 x 400g carton or tin of chopped tomatoes, 30p (30p/400g)
+                <br>1 teaspoon (4g) Marmite, 4p (£2.50/250g)
+                <br>1 vegetable stock cube, 3p (30p/10 stock cubes)
+                <br>1 teaspoon sugar, >1p (80p/1kg)                 
+                </p></button>
+            </div>
+            </div>
+            <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Method</h3>
+              <p>
+                First, drain and rinse the beans. Empty the kidney beans and the baked beans into a colander, and blast under cold water to get rid of the tinned taste, and the cheap sauce from the baked beans.When well rinsed, set to one side. 
+                <br><br>
+                Peel and chop the onion, and peel and finely slice the garlic. Place in a sauté or large frying pan with the oil and paprika, and fry on a low heat until the onion is softened. 
+                <br><br>
+                Add the chopped tomatoes, Marmite or Vegemite, crumbled stock cube, sugar and half a tin of water, and stir well. Simmer gently for 15 minutes until thickened and glossy. 
+                Tip in the colander of rinsed beans, stir to mix well and heat through for 10 minutes
+                <br><br>
+                For a slightly Mexican twist, have it with tortillas, some grated cheese, sliced red onion and iceberg lettuce, with lime to squeeze all over.
+
+                </p></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item main-body">
+          <!--recipie 4-->
+          <div class="row main-body">
+            <div class="col main-body mt-3"><h2 class="main-body display-4">Simple Paella, 67p per portion</h2></div>
+          </div>
+          <div class="row main-body mt-3 mb-3">
+            <div class="col main-body"><img class="img-fluid rounded border border-dark" src="./images/recipePaella.png" alt="Paella"/></div>
+          </div>
+          
+          <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Ingredients</h3>
+                <br>2 tablespoons oil, 4p
+                <br>1 onion (around 180g), 10p
+                <br>2 cloves of garlic, 4p
+                <br>500ml chicken or vegetable stock, 3p
+                <br>a scant 1/2 teaspoon turmeric powder, 3p
+                <br>200g tinned chopped tomatoes, 18p
+                <br>150g rice, 7p
+                <br>1/2 tsp mixed dried herbs, 1p
+                <br>70g fresh or frozen peas or green beans, cut into lengths, 8p
+                <br>100g fresh or frozen cooked prawns, 77p
+                
+                </p></button>
+            </div>
+            </div>
+            <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Method</h3>
+              <p>
+                Heat the oil in a medium frying pan or sauté pan. Peel and finely slice the onion, peel and finely chop or crush the garlic, and put both into the pan to soften for a few minutes on a medium heat. Take care not to brown them, as the slightly burnt taste will permeate through the whole dish.
+                <br><br>
+                Meanwhile bring the chicken stock to a simmer in a separate small saucepan and shake in the turmeric.
+                <br><br>
+                Add the chopped tomatoes and the rice to the frying pan with the onion and garlic and stir.
+                <br><br>
+                Chop the thyme, add to the pan and stir again briefly to combine. Pour a cup of the hot stock into the pan, then stir well to stop the rice from sticking.When the stock has been absorbed by the rice, add another cup. Repeat until all the stock is used up, or the rice is soft. unlike risotto, you do not need to stir paella constantly, but a little stir every now and again is helpful to stop the rice from sticking to the pan.
+                <br><br>
+                When the rice is almost cooked, add the frozen peas or beans and the cooked prawns, stir and cook for 5 minutes until the vegetables are tender and the prawns are warmed through.
+                <br><br>
+                Remove from the heat and leave to stand for a few minutes before serving, to allow the flavours to settle. Traditionally you’d drizzle a little extra oil over the top, to serve. And maybe a pinch of salt.
+                
+                </p></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item main-body">
+          <!--recipie 5-->
+          <div class="row main-body">
+            <div class="col main-body mt-3"><h2 class="main-body display-4">Sausage & Bean Casserole, 60p per portion</h2></div>
+          </div>
+          <div class="row main-body mt-3 mb-3">
+            <div class="col main-body"><img class="img-fluid rounded border border-dark" src="./images/recipeCasserole.png" alt="Casserole dish"/></div>
+          </div>
+          
+          <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Ingredients</h3>
+                <br>1 tbsp sunflower oil, 3p (£3/3l)
+                <br>1 onion, chopped, 11p 
+                <br>6 basics sausages, £1 
+                <br>400g tin baked beans, 25p 
+                <br>400g tin chopped tomatoes, 35p
+                <br>142g double concentrate tomato puree, 35p
+                <br>220ml bitter, 14p at £1.10/440ml
+                <br>1 tsp mixed herbs, 12p 
+                <br>1 stock cube, 3p
+                
+                
+                </p></button>
+            </div>
+            </div>
+            <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Method</h3>
+              <p>
+                Heat the oil in a large saute pan and add the onion.
+                <br><br>
+                Add the sausages and cook on a medium heat for 8-10 minutes, until they start to brown.
+                <br><br>
+                Thoroughly rinse the beans and pour over, then add the tomatoes, puree and bitter.
+                <br><br>
+                Add the herbs and crumble in the stock cube, and stir well to combine.
+                Turn the heat up high to bring to the boil for five minutes, then reduce to a medium simmer for a further 15, or until the sausages are cooked through.
+                <br><br>
+                This is one of those dishes that improves if left in the fridge or freezer for the flavours to develop – so freeze leftovers and enjoy them even more the second time around.
+
+                </p></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item main-body">
+          <!--recipie 6-->
+          <div class="row main-body">
+            <div class="col main-body mt-3"><h2 class="main-body display-4">Blackberry applesauce cake, 22p per portion</h2></div>
+          </div>
+          <div class="row main-body mt-3 mb-3">
+            <div class="col main-body"><img class="img-fluid rounded border border-dark" src="./images/recipeCake.png" alt="Blackberry Cake"/></div>
+          </div>
+          
+          <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Ingredients</h3>
+                <br>180g butter substitute, 39p (55p/250g)
+                <br>180g sugar, 16p (90p/1kg)
+                <br>1 tbsp cooking oil, 2p (£3/3l)
+                <br>4 tbsp applesauce, 17p (£1.20/420ml)
+                <br>100g blackberries, 40p (£2/500g)
+                <br>275g self raising flour, 12p (65p/1.5kg)
+                <br>1 level tsp bicarbonate of soda, 2p (90p/180g)
+                <br>3 tbsp cocoa powder, 18p (£2.10/250g)
+                <br>A pinch of salt, 1p (40p/750g)
+                <br>
+                <br>For the icing:
+                <br>70g soft spread (15p)
+                <br>110g sugar (10p) and a couple of blackberries.
+                
+                </p></button>
+            </div>
+            </div>
+            <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Method</h3>
+              <p>
+                First grab your blackberries and pop them into a small saucepan on the hob on a low heat to break them down. Add a tablespoon of sugar to sweeten them if they are a little bit hard. Cook gently with a splash of water, giving them a stir every now and again, while you put together the rest of the cake mixture.
+                <br><br>
+                Take a large mixing bowl, and add your chosen butter substitute a tablespoon at a time. Add the sugar, and beat well with a fork or wooden spoon until well combined. Add the oil and applesauce and beat again.
+                <br><br>
+                Pour in half of the flour, and the bicarbonate of soda and salt, and the cocoa, and mix to a dark, sloppy batter. Gradually add the remaining flour, mixing it all together.
+                <br><br>
+                Tip in the blackberries, careful, they might be warm! and give it all one last stir before standing the cake mix to one side.
+                <br><br>
+                Turn your oven on to 160C, and lightly grease a cake tin, loaf tin or muffin tray. Pour the batter in and pop it in the oven, to bake for 45 minutes (12 for muffins!) It is ready when it is risen and firm, and a sharp knife or skewer inserted into the middle comes out clean. Depending on your oven or the shape of your cake tin, it may need a little longer.
+                <br><br>
+                To make the icing, mix the soft spread with the sugar and a couple of blackberries. Beat until well combined, and spread on top – and around the sides if you want to!
+
+                </p></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item main-body">
+          <!--recipie 7-->
+          <div class="row main-body">
+            <div class="col main-body mt-3"><h2 class="main-body display-4">Home made Pop Tarts, 10p per portion</h2></div>
+          </div>
+          <div class="row main-body mt-3 mb-3">
+            <div class="col main-body"><img class="img-fluid rounded border border-dark" src="./images/recipePop.png" alt="Pop tarts"/></div>
+          </div>
+          
+          <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Ingredients</h3>
+                <br>100g unsalted butter or substitute, plus extra for greasing, 22p (55p/250g)
+                <br>200g plain flour, plus extra for the worktop, 7p (55p/1.5kg)
+                <br>6 tablespoons cold water 
+                <br>6 to 8 tablespoons jam, 10p (30p/454g)
+                <br>6 tablespoons icing sugar, approx. 60g, 10p (£1.70/kg)
+                <br>sprinkles, 30p (£1/80g)
+                <br>Preheat the oven to 180°C/350°F/gas 4. 
+                
+                </p></button>
+            </div>
+            </div>
+            <div class="row main-body">
+            <div class="col main-body">
+              <button class="rounded border border-dark p-3 mt-2 mb-3"><h3>Method</h3>
+              <p>
+                First, make the pastry. Either melt the butter in a bowl in the microwave and mix it quickly into the flour to form a breadcrumb mixture, but this will need to go into the fridge for at least an hour to bring it down to a workable temperature – or cube the butter and rub it into the flour with your fingertips to form a fine breadcrumb consistency. This won’t need to be chilled as you haven’t heated the butter. 
+                <br><br>
+                Add 1 tablespoon of water at a time, then mix with a knife until it just forms a dough.
+                <br><br>
+                Flour your worktop and tip out the dough. Now halve it, so you have a manageable amount to work with, and roll it out very thinly, 2–3mm thick. If you don’t have a rolling pin, use a jar or bottle to roll out your pastry. 
+                <br><br>
+                When the pastry is rolled out, cut into 16 rectangles about 10cm x 7cm each. That’s a guess, by the way. Slightly bigger or slightly smaller is just fine. Get as many rectangles as you can from your pastry, adding the cut-offs back to the rest and re-rolling as necessary.
+                <br><br>
+                Spread jam thinly on half of the rectangles, leaving a generous 1–2cm space around the edges for it to spread. Place a plain rectangle on top of a jammy one, and press together lightly. Trim the edges with a sharp knife to neaten. 
+                <br><br>
+                Grease a baking sheet and place the tarts on it very carefully. Repeat these steps until all of the pastry dough is used up, making 8 in total. 
+                <br><br>
+                Bake in the centre of the oven for 14–16 minutes until lightly golden. Remove from the oven and leave to cool for half an hour. Don’t worry if they feel slightly soft: they’ll harden as they cool. 
+                <br><br>
+                Make up the icing: mix the icing sugar with 1 tablespoon of the water in a small bowl, and spread on top of the cooled tart. Add sprinkles immediately, while the icing is still soft, and leave to set. They can be eaten cold, or warmed gently in the oven.
+                </p></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#tipsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#tipsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   
+
+    <!--Footer-->
+    <div id="footer" class="row pt-2 text-center">
+      <div class="col-sm-5 col-md-4 float-start">
+        <p>Registered charity number 897564231</p>
+      <p>© Copyright Cost Of Living Helper <span id="year"></span></p>
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <img src="./images/facebook.png" class="social-media img-fluid" alt="facebook logo"/>
+        <img src="./images/twitter.png" class="social-media img-fluid" alt="twitter logo"/>
+        <img src="./images/instagram.png" class="social-media img-fluid" alt="instagram logo"/>
+      </div>
+      <div class="col-sm-5 col-md-4 float-end">
+        <p>Tel: 01223 344 556</p>
+        <p>Email: help@colhelper.com</p>
+      </div>
+    </div>
+
+  </div>
+    
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
