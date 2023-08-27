@@ -152,15 +152,17 @@ background-color: #a5cda9;
     color: #a5cda9;
 }
 
-/**/
+/*health page*/
 #health-quote{
     font-family: 'Nixie One', cursive;
 }
 
 
 
-/*
-#a5cda9
-#4a484c
-font-family: 'Parisienne', cursive;
+/* Style guide
+cream colour: #dfd8d8;
+grey color: #4a484c
+green color: #a5cda9
+small fonts: 'Nixie One', cursive;
+large fonts and headings: 'Parisienne', cursive;
 */
