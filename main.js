@@ -23,17 +23,29 @@ alert("I'm sorry but our search function is currently not working")
 
 function calculateExtra(calculatorForm){
     const income = Number(calculatorForm.income.value);
+    if (isNaN(income) || income < 1) { alert("ERROR: Income must be a number greater than 0");  }
     const rent = Number(calculatorForm.rent.value);
+    if (isNaN(rent)) { alert("ERROR: Rent must be a number"); }
     const energy = Number(calculatorForm.energy.value);
+    if (isNaN(energy)) { alert("ERROR: Energy must be a number"); }
     const water = Number(calculatorForm.water.value);
+    if (isNaN(water)) { alert("ERROR: Water must be a number"); }
     const tax = Number(calculatorForm.tax.value);
+    if (isNaN(tax)) { alert("ERROR: Council tax must be a number"); }
     const food = Number(calculatorForm.food.value);
+    if (isNaN(food)) { alert("ERROR: Food must be a number"); }
     const phone = Number(calculatorForm.phone.value);
+    if (isNaN(phone)) { alert("ERROR: Phone/broadband must be a number"); }
     const fuel = Number(calculatorForm.fuel.value);
+    if (isNaN(fuel)) { alert("ERROR: Fuel must be a number"); }
     const insurance = Number(calculatorForm.insurance.value);
+    if (isNaN(insurance)) { alert("ERROR: Car insurance must be a number"); }
     const tvLic = Number(calculatorForm.tvLic.value);
+    if (isNaN(tvLic)) { alert("ERROR: Tv License must be a number"); }
     const tvSub = Number(calculatorForm.tvSub.value);
+    if (isNaN(tvSub)) { alert("ERROR: Tv subscription must be a number"); }
     const other = Number(calculatorForm.other.value);
+    if (isNaN(other)) { alert("ERROR: Other must be a number"); }
      
 
     const totalBills = rent+energy+water+tax+food+phone+fuel+insurance+tvLic+tvSub+other;
