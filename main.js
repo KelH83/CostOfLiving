@@ -53,7 +53,7 @@ function calculateExtra(calculatorForm){
 
     console.log(typeof(extra));
 
-    document.getElementById("extra").innerHTML = extra;
+    document.getElementById("extra").innerHTML = Math.floor(extra * 100)/100;
 
     if(extra <=0){
         document.getElementById("resultsInfo").innerHTML="<p class='fs-4 rounded border border-dark'>It's unfortunate that your financial situation is at this point, everyone deserves some fun money to treat themselves and their loved ones.Take a look at our <a class='text-success link-underline-success'href='benefits.html'>benefits</a> section to see if there are any benefits you may be entitled to. Also check out our <a class='text-success link-underline-success' href='money.html'>make money</a> section for ideas on how to boost your income. Please also reach out to some of the <a class='text-success link-underline-success' href='charities.html'>charities</a> to see if they can assist you.</p>";
